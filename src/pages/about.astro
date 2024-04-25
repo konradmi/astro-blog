@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+
+import '../styles/global.css'
+
+const identity = {
+  firstName: "Konrad",
+  country: "Poland",
+}
+
+const pageTitle = 'About'
+---
+<BaseLayout pageTitle={pageTitle}>
+	<p>Me:</p>
+	<ul>
+		<li>First Name: {identity.firstName}</li>
+		<li>Country: {identity.country}</li>
+	</ul>
+</BaseLayout>
